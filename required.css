@@ -1,28 +1,13 @@
 a{
     text-decoration: none;
 }
-.green{
-    background: #F8F9FA;
-}
 .main-nav{
     margin: 0;
     display: flex;
     list-style: none;
 }
-li{
-    padding:20px;
-}
-.font{
-    font-size: 18px;
-}
 body{
     margin: auto 0;
-}
-.push{
-    margin-left: auto;
-}
-body{
-    background-image:url(background1.jpeg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
