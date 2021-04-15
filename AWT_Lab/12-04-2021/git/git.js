@@ -15,10 +15,8 @@ function getRepos()
             var row=table.insertRow(-1);
             c1=row.insertCell(-1);
             c2=row.insertCell(-1);
-            c3=row.insertCell(-1);
             c1.innerHTML=element.name;
             c2.innerHTML=element.owner.login;
-            c3.innerHTML=element.descprition;
         })
     })
     var div=document.getElementById("table");
