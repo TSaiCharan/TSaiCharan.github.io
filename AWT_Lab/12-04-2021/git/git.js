@@ -1,7 +1,8 @@
 function getRepos()
 {
-    var user='tsaicharan';
-    var url=`https://api.github.com/users/${user}/respos`;
+    // var user='tsaicharan';
+    var user=document.getElementById("username").value;
+    var url=`https://api.github.com/users/${user}/repos`;
     var table=document.createElement("TABLE");
     table.border="2";
     fetch(url)
