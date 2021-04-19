@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <script src="https://www.gstatic.com/firebase/8.4.1/firebase.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+    </head>
+    <body>
+        <center>
+            <input type="text" name="name" id="name" placeholder="Name"><br>
+            <input type="text" name="email" id="email" placeholder="Email"><br>
+            <button type="submit" onclick="insertData()">Create</button><br>
+            <button type="submit" onclick="updateData()">Update</button><br>
+            <button type="submit" onclick="deleteData()">Delete</button><br>
+            <button type="submit" onclick="display()">Display</button><br>
+            <div id="table">
+
+            </div>
+            <script src="script.js"></script>
+        </center>
+    </body>
+</html>
