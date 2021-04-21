@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+}
+.main-nav{
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+body{
+    margin: auto 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.header{
+    border-style: solid;
+    border-width: thin;
+    /* background-color:forestgreen; */
+    display: grid;
+    margin-left: 260px;
+    margin-right: 260px;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.details{
+    border-style: solid;
+    border-width: thin;
+    border-top: 0px;
+    /* background-color: aqua; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 260px;
+    margin-right: 260px;
+}
