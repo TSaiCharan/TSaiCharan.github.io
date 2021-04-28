@@ -26,43 +26,51 @@
                 </ul>
             </nav>
         </header>
-        <div class="form">
-            <div class="header">
-                Register
-            </div>
+        <div class="text_register" style="padding-top: 30px;">
+            <div class="header_register">Register</div>
             <form action="login.html" method="POST">
-                <div class="details">
-                    <div>
-                        <label for="FirstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
-                    </div>
-                    <div>
-                        <label for="FirstName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName">
-                    </div>
-                    <div>
-                        <label for="email">E-Mail Address</label>
-                        <input type="email" name="mail" id="mail">
-                    </div>
-                    <div>
-                        <label for="phone">Phone Number</label>
-                        <input type="text" name="phoneNumber" id="phoneNumber">
-                    </div>
-                    <div>
-                        <label for="address">Address</label>
-                        <input type="text" name="address" id="address">
-                    </div>
-                    <div>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                    <div>
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
-                    </div>
-                    <div>
-                        <button type="submit">Register</button>
-                    </div>
+                <div class="register_form">
+                    <table  cellspacing="10px" class="table_register">
+                        <tr>
+                            <td align="right"><label for="FirstName">First Name</label></td>
+                            <td style="padding-left: 30px;"><input type="text" name="firstName" id="firstName" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="FirstName">Last Name</label></td>
+                            <td style="padding-left: 30px;"><input type="text" name="lastName" id="lastName" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="email">E-Mail Address</label></td>
+                            <td style="padding-left: 30px;"><input type="email" name="mail" id="mail" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="phone">Phone Number</label></td>
+                            <td style="padding-left: 30px;"><input type="text" name="phoneNumber" id="phoneNumber" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="address">Address</label></td>
+                            <td style="padding-left: 30px;"><input type="text" name="address" id="address" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="password">Password</label></td>
+                            <td style="padding-left: 30px;"><input type="password" name="password" id="password"  required size="50"></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="confirmPassword">Confirm Password</label></td>
+                            <td style="padding-left: 30px;"><input type="password" name="confirmPassword" id="confirmPassword"  required size="50"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="checkbox" name="keepLogin" id="keepLogin">Agree for terms and conditions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button type="submit" class="btn">Register</button>
+                                <button type="submit">Register</button>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </form>
         </div>
