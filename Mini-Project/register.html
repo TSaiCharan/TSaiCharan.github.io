@@ -4,28 +4,15 @@
         <title>Register</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <header>
-            <nav style="background: #F8F9FA;">
-                <ul class="main-nav">
-                    <li style="font-size: 18px; padding: 20px;">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <!-- <li style="font-size: 18px; padding: 20px;">
-                        <a href="">Donor</a>
-                    </li>
-                    <li style="font-size: 18px; padding: 20px;">
-                        <a href="">Organ</a>
-                    </li> -->
-                    <li style="font-size: 18px; padding: 20px; margin-left: auto;">
-                        <div>
-                            <a href="register.html" style="color:#0a58ca;">Register</a>&emsp;<a href="login.html" style="color:#0a58ca;">Login</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div class="navbar"></div>
+        <script>
+            $(function() {
+                $(".navbar").load("navbar.html");
+            });
+        </script>
         <div class="text_register" style="padding-top: 30px;">
             <div class="header_register">Register</div>
             <form method="POST" action="login.html">
