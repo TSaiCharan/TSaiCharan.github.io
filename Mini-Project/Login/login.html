@@ -7,18 +7,19 @@
         <title>Login</title>
         <link rel="shortcut icon" href="logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/NavBar/navbar.css">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
         <div class="navbar"></div>
         <script>
             $(function() {
-                $(".navbar").load("navbar.html");
+                $(".navbar").load("/NavBar/navbar.html");
             });
         </script>
         <div class="text_register" style="padding-top: 30px;">
             <div class="header_register">Login</div>
-            <form action="index.html" method="POST">
+            <form action="../index.html">
                 <div class="register_form">
                     <table cellspacing="10px" class="table_register">
                         <tr>
