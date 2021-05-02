@@ -1,0 +1,14 @@
+a.nav{
+    text-decoration: none;
+}
+.main-nav{
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+body{
+    margin: auto 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
