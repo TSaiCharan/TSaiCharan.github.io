@@ -22,7 +22,7 @@ function validateLogin()
                 var name=data.val().Name;
                 found=true;
                 alert("Welcome "+name);
-                window.open("../index.html","_self");
+                window.open("index.html","_self");
             }
         })
         if(found==false){

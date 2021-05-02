@@ -28,7 +28,7 @@ function createUser()
         Password:pass
     })
     alert("User successfully registerd. Now login using same credentials.")
-    window.open("../Login/login.html","_self");
+    window.open("login.html","_self");
 }
 
 function validatePassword()
