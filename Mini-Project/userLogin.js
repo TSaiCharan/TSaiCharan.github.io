@@ -21,7 +21,10 @@ function validateLogin()
             if(data.val().Mobile==number && data.val().Password==pass){
                 var name=data.val().Name;
                 found=true;
+                localStorage.setItem("logedin","true");
+                localStorage.setItem("userName",name);
                 alert("Welcome "+name);
+                console.log( localStorage.getItem("logedin") );
                 window.open("index.html","_self");
             }
         })
@@ -29,4 +32,5 @@ function validateLogin()
             alert("Credentials not valid");
         }
     })
+    console.log( localStorage.getItem("logedin") );
 }

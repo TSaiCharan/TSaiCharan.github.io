@@ -16,15 +16,11 @@ function createUser()
     var name=document.getElementById("name").value;
     var mail=document.getElementById("mail").value;
     var phone=document.getElementById("phoneNumber").value;
-    var address=document.getElementById("address").value;
     var pass=document.getElementById("password").value;
-    // var conf=document.getElementById("confirmPassword").value;
-    // var check=document.getElementById("agree").value;
     database.child(phone).set({
         Name:name,
         Email:mail,
         Mobile:phone,
-        Address:address,
         Password:pass
     })
     alert("User successfully registerd. Now login using same credentials.")
@@ -40,5 +36,6 @@ function validatePassword()
     }
     else {
         alert("Password and Confirm Password not matching");
+        return false;
     }
 }

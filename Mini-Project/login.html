@@ -9,46 +9,43 @@
         <link rel="shortcut icon" href="../ImageSource/logo.png" type="image/x-icon">
 
         <link rel="stylesheet" href="login.css">
-        <link rel="stylesheet" href="navbar.css">
 
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
         <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
     </head>
     <body>
-        <div class="navbar"></div>
-        <script>
-            $(function() {
-                $(".navbar").load("navbar.html");
-            });
-        </script>
-        <div class="text_register" style="padding-top: 30px;">
-            <div class="header_register">
-                Login
-            </div>
-            <div class="register_form">
-                <table cellspacing="10px" class="table_register">
-                    <tr>
-                        <td align="right" style="padding-left: 100px;"><label for="number">Phone Number</label></td>
-                        <td style="padding-left: 30px;"><input type="tel" name="mail" id="number" size="30"></td>
-                    </tr>
-                    <tr>
-                        <td align="right"><label for="password">Password</label></td>
-                        <td style="padding-left: 30px;"><input type="password" name="password" id="password" size="30"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <input type="checkbox" name="keepLogin" id="keepLogin">Keep Me Login 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <button type="submit" class="btn" onclick="validateLogin()">Login</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+        <navbar>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Smart Donor</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </navbar>
+        <div class="form">
+            <h1>Login</h1>
+            <div class="formcontainer">
+                <div class="container">
+                    
+                    <label for="number"><strong>Phone Number</strong></label>
+                    <input type="text" placeholder="Enter Phone Number" name="number" id="number" required>
+                    
+                    <label for="psw"><strong>Password</strong></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+                    <center>
+                        <input type="checkbox"  checked="checked" name="remember"> Keep me login
+                    </center>
+                </div>
+                <button type="submit" onclick="validateLogin()"><strong>Login</strong></button>
         </div>
+        <script src="userDetails.js"></script>
         <script src="userLogin.js"></script>
     </body>
 </html>
