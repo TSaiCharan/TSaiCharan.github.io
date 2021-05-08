@@ -25,7 +25,7 @@ function validateLogin()
                 localStorage.setItem("userName",name);
                 alert("Welcome "+name);
                 console.log( localStorage.getItem("logedin") );
-                window.open("index.html","_self");
+                window.open("../index.html","_self");
             }
         })
         if(found==false){
