@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appointment Availability </title>
+        <link rel="stylesheet" type="text/css" media="screen" href="styl.css"/>
+    
+    </head>
+    <body>
+        <center>
+            <h1>Get Availability of Covid-19 Vaccine Doses Pin Code wise.</h1>
+            <img src="vaccine-logo-680x510px.jpg" alt="vaccine" width="500" height="400" style="float:left">
+            <table>
+            <tr>
+                <td style="color: white; font-weight:500;">Pin Code:</td>
+                <td><input type="text" name="pincode" id="pin" placeholder="Enter 7 digit pin code"><br></td>
+            </tr>
+            <tr>
+               <td style="color: white; font-weight:500;">Date:</td>
+               <td><input type="text" name="date" id="date" placeholder="dd-mm-yyyy"><br></td>
+            </tr>
+            <tr>   
+                <td colspan="2" align="center"><button type="submit" onclick="getDetails()" autofocus>Get Appointment Details</button></td>
+            </tr>
+            </table><br>
+            <div id="details"></div>
+            <strong style="position:absolute; bottom :0; left: 0; width:100% text-align center; color: rgb(250, 245, 245);"  >STAY HOME-STAY SAFE</strong>
+        </center>
+        <footer>
+            <strong style="color: rgb(23, 3, 46); font-family:serif">Stopping the spread starts with you.</strong><br>
+            <p style="color: rgb(23, 3, 46);">Wear a mask.</p>
+            <p style="color: rgb(23, 3, 46);">Clean your hands.</p>
+            <p style="color: rgb(23, 3, 46);">Maintain safe distance</p>
+            <p style="color:rgb(23, 3, 46);">Get vaccinated</p>
+            <a href="https://www.mohfw.gov.in/" style="color: seashell;">For more info on Covid</a>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
